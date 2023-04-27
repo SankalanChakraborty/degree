@@ -3,9 +3,11 @@ import './SearchBar.css';
 import { useState } from 'react';
 
 
+
 const Search = () => {
   const [inputText, setInputText] = useState("");
   const [weather, setWeather] = useState({});
+  console.log(process.env.REACT_APP_API_KEY);
 
   // const months = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sept", "Oct", "Nov", "Dec" ];
   // const weekDays = ["Sun", "Mon", "Wed", "Thur", "Fri", "Sat", "Sun"];
@@ -15,8 +17,8 @@ const Search = () => {
   // const year = dateObj.getFullYear();
 
   const api = {
-    API_KEY: "a2d7b743c6269256661957a5c10b7f84",
-    BASE_URI: "https://api.openweathermap.org/data/2.5/"
+    "API_KEY": process.env.REACT_APP_API_KEY,
+    "BASE_URI": "https://api.openweathermap.org/data/2.5/"
   }
 
   const iconURL = "https://openweathermap.org/img/wn/"; 
