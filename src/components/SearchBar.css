@@ -16,16 +16,14 @@
     width: 65%;
     padding: 15px;
     border-right: 1px solid rgba(255,255,255,0.75);
-    background-image: url("../assets/images/hot-air-ballon.jpg");
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    opacity: 0.7;
 }
 
-.result-div h3{
-    color: white;
-    
+.result-div h3, .result-div span{
+    color: white;   
+}
+
+.result-div span{
+    font-style: italic;
 }
 
 .search{
