@@ -30,9 +30,7 @@ const Search = () => {
     "Sunday",
   ];
   const dateObj = new Date();
-  console.log(dateObj);
   const weekDay = weekDays[dateObj.getDay()];
-  console.log(weekDay);
   const todaysDate = dateObj.getDate();
   const month = months[dateObj.getMonth()];
   const year = dateObj.getFullYear();
@@ -54,7 +52,6 @@ const Search = () => {
           .then((res) => res.json())
           .then((result) => {
             setWeather(result);
-            console.log(weather);
           })
           .catch((error) => {
             console.error("City not found ! ", error);
