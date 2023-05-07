@@ -30,7 +30,9 @@ const Search = () => {
     "Sunday",
   ];
   const dateObj = new Date();
-  const weekDay = weekDays[dateObj.getDay() - 1];
+  console.log(dateObj);
+  const weekDay = weekDays[dateObj.getDay()];
+  console.log(weekDay);
   const todaysDate = dateObj.getDate();
   const month = months[dateObj.getMonth()];
   const year = dateObj.getFullYear();
